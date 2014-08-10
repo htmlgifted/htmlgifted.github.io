@@ -1,7 +1,7 @@
 <!DOCTYPE php>
 <?php
 /* Don't remove this line. */
-require('http://blog.jeremyahenry.com/wp-blog-header.php');
+require('blog.jeremyahenry.com/wp-blog-header.php');
 ?>
 
 <?php get_header(); ?>
