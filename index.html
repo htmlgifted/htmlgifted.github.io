@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Menu Hamburger</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--Using jQuery and jQuery UI for display effects-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+    <!--Using the hamburger menu display code-->
+    <script src="js/hamburger.js"></script>
+
+    <!--Using Media Queries, if the viewport is smaller than 700px use another stylesheet-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/hamburger.css"/>
+</head>
+
+<body>
+
+<!--This wrapping container is used to get the width of the whole content-->
+<div id="container">
+
+    <!--The Hamburger Button in the Header-->
+    <header>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </header>
+
+    <!--The mobile navigation Markup hidden via css-->
+    <nav>
+        <ul>
+	    <li><span><strong><a href="c/index.html" target="fm">Home</a></strong></span></li>
+            <li><span><strong><a href="c/ed/index.html" target="fm">My Education</a></strong></span></li>
+            <li><span><strong><a href="c/ex/index.html" target="fm">My Experience</a></strong></span></li>
+            <li><span><strong><a href="c/skills/index.html" target="fm">Skills</a></strong></span></li>
+            <li><span><strong><a href="c/github/index.html" target="fm">My Github</a></strong></span></li>
+	    <li><span><strong><a href="c/pdf/index.html" target="fm">Resume PDF</a></strong></span></li>
+	    <li><span><strong> <a href="c/contact/index.html" target="fm">Contact me</a></strong></span></li>
+        </ul>
+    </nav>
+
+    <!--The Layer that will be layed over the content
+    so that the content is unclickable while menu is shown-->
+    <div id="contentLayer"></div>
+
+    <!--The content of the site-->
+    <div id="content">
+       <div id="about">
+  <div id="story">
+
+      <p>  
+<iframe id="fm" name="fm" style="position:fixed;margin-top:-1px;width:100%;height:100%" frameborder="0" src="c/index.html" sandbox="allow-forms allow-popups allow-pointer-lock allow-same-origin allow-scripts" scrolling="auto"></iframe>	    
+          </p>  
+               <br class="clear-both" />
+         </div>
+      </div>
+      
+
+    </div>
+
+</div>
+
+</body>
+</html>
