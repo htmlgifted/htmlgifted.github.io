@@ -1,0 +1,209 @@
+@media screen and (max-width: 768px)
+{
+   #banner > img
+	{
+		max-width: 100%;
+	}
+
+	ul.menu-list
+   {
+      height: auto;
+      text-align: justify;
+      -ms-text-justify: distribute-all-lines;
+      text-justify: distribute-all-lines;
+   }
+
+   li.menu-item
+   {
+      margin: 0em 0.2em;
+      width: auto;
+      vertical-align: top;
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+   }
+
+   .stretch
+   {
+      width: 100%;
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+   }
+
+   a.menu-item-link
+   {
+      font-size: 1.1em;
+   }
+
+   #wrapper
+   {
+      width: inherit;
+   }
+
+   .small-box
+   {
+      width: inherit;
+      float: none;
+   }
+
+   #wrapper
+   {
+      float: none;
+   }
+
+   .social-bar a
+   {
+      margin-right: 0em;
+   }
+
+   #newsletter-form
+   {
+      font-size: 1em;
+   }
+
+   input#newsletter-email
+   {
+      width: 10em;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -o-transition: none;
+      -ms-transition: none;
+      transition: none;
+   }
+
+   #team-logo-bar a
+   {
+      text-decoration: none;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+   }
+}
+<nav class="menu">
+<select id="menu-select">
+  <option selected="selected" value="">Go to...</option>
+  <option value="/">Homepage</option>
+  <option value="/news">News</option>
+  <option value="/graphics">Graphics</option>
+  <option value="/mobile">Mobile</option>    
+  <option value="/web-design">Web Design</option>
+</select>
+$("#menu-select").change(function(){
+   window.location.href = $(this).children("option:selected").val();
+});
+   <ul class="menu-list">
+      <li class="menu-item">
+         <a class="menu-item-link" href="./homepage" title="Homepage">Homepage</a>
+      </li>
+      ...
+      <li class="stretch">
+      </li>
+   </ul>
+</nav>
+*display: inline;
+zoom: 1;
+@media screen and (max-width: 480px)
+{
+   body
+   {
+      font-family: Calibri,Arial,Helvetica,sans-serif;
+   }
+
+   #banner
+   {
+      background-image: url("../images/mobile-banner.png");
+   }
+
+   .menu
+   {
+      display: none;
+   }
+
+   #wrapper
+   {
+      width: inherit;
+   }
+
+   a.menu-item-link
+   {
+      font-family: Calibri,Arial,Helvetica,sans-serif;
+   }
+
+   #menu-select
+   {
+      display: block;
+      margin: 0.5em auto;
+      width: 90%;
+      font-size: 1em;
+   }
+
+   #newsletter-box
+   {
+      display: none;
+   }
+
+   #mobile-newsletter-box
+   {
+      display: block;
+   }
+
+   #mobile-newsletter-box *
+   {
+      width: 90%;
+      margin: 0em auto 0.5em auto;
+   }
+
+   #mobile-newsletter-box > form > *
+   {
+      display: block;
+   }
+
+   input#mobile-newsletter-email
+   {
+      font-size: 1em;
+   }
+
+   #mobile-newsletter-box p
+   {
+      padding: 0;
+      text-align: center;
+   }
+
+   #mobile-newsletter-box a
+   {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #FFFFFF;
+   }
+
+   .long-box,
+   .small-box,
+   #banner
+   {
+      box-shadow: none;
+   }
+
+   #team-logo-bar
+   {
+      text-decoration: none;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+   }
+
+}
+@media only screen and (min-width : 481px)
+{
+   a.menu-item-link
+   {
+      font-family: Bebas Neue, Calibri,Arial,Helvetica,sans-serif;
+   }
+}
+@media only screen and (min-width : 481px)
+{
+   #banner
+   {
+      background-image: url("../images/banner.png");
+   }
+}
