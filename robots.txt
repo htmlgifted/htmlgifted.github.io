@@ -1,6 +1,6 @@
 User-agent: *
 Disallow: /images/
-Disallow: /wp-admin/
-Disallow: /wp-includes/
+Disallow: /css
+Disallow: /js
 
-Sitemap: <http://blog.jeremyahenry.com/sitemap.xml>
+Sitemap: <http://www.jeremyahenry.com/sitemap.xml>
